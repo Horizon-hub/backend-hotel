@@ -12,8 +12,9 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 const pool = new Pool({
-  connectionString:"postgresql://postgres:syriahotel$10213123@db.usjlvzxargnzqddtppnb.supabase.co:5432/postgres"
+  connectionString:"postgresql://postgres.usjlvzxargnzqddtppnb:syriahotel$10213123@aws-0-eu-central-2.pooler.supabase.com:5432/postgres"
 })
+
 
 
 app.get('/api/locations', async (req, res) => {
