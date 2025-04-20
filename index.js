@@ -19,6 +19,7 @@ const pool = new Pool({
   password: 'syriahotel$10213123',
   database: 'postgres',
   ssl: { rejectUnauthorized: false },
+  family: 4
 });
 
 app.get('/api/locations', async (req, res) => {
