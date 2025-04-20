@@ -13,7 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const pool = new Pool({
-  host: 'db.usjlvzxargnzqddtppnb.supabase.co',
+
+  host: '2a05:d019:fa8:a400:eb96:8e3b:66e8:1e86',
   port: 5432,
   user: 'postgres',
   password: 'syriahotel$10213123',
