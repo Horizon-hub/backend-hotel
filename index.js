@@ -11,17 +11,10 @@ const SECRET_KEY = 'your_jwt_secret_key'; // Use env variable in production
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
 const pool = new Pool({
+  connectionString:"postgresql://postgres:syriahotel$10213123@db.usjlvzxargnzqddtppnb.supabase.co:5432/postgres"
+})
 
-  host: '2a05:d019:fa8:a400:eb96:8e3b:66e8:1e86',
-  port: 5432,
-  user: 'postgres',
-  password: 'syriahotel$10213123',
-  database: 'postgres',
-  ssl: { rejectUnauthorized: false },
-  family: 4
-});
 
 app.get('/api/locations', async (req, res) => {
     try {
